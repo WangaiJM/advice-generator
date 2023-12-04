@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+:root {
+  --color-secondary-variant: hsl(193, 38%, 86%);
+  --color-secondary: hsl(150, 100%, 66%);
+
+  --color-primary-variant: hsl(217, 19%, 38%);
+  --color-primary: hsl(217, 19%, 24%);
+  --color-background: hsl(218, 23%, 16%);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 2.8rem;
+}
+p {
+  line-height: 1.8;
+}
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+.main {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-background);
+}
+.advice__card {
+  padding: 4rem;
+  background-color: var(--color-primary);
+  color: var(--color-secondary-variant);
+  text-align: center;
+  width: 48rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.advice__id {
+  color: var(--color-secondary);
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+.advice__statement {
+  margin-bottom: 3rem;
+  font-weight: 800;
+}
+.divider {
+  justify-self: stretch;
+  margin-bottom: 2rem;
+}
+.btn__advice {
+  position: absolute;
+  bottom: -3.2rem;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 0;
+  background-color: var(--color-secondary);
+  padding: 2rem;
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.btn__advice:hover,
+.btn__advice:active {
+  box-shadow: 0 0 3rem 0 var(--color-secondary);
+}
+@media screen and (max-width: 450px) {
+  p {
+    line-height: 1.5;
+  }
+  .advice__card {
+    width: 87%;
+    margin: auto;
+  }
+}
